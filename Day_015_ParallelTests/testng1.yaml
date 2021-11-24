@@ -1,0 +1,15 @@
+name: Suite
+threadCount: 2
+parallel: tests
+configFailurePolicy: skip
+tests:
+  - name: Test1_MercuryTest
+  parallel: tests
+  classes:
+    - Day_015_ParallelTests.MercuryTest
+
+  - name: Test2_OrangeHRMTest1
+  parallel: tests
+  classes:
+    - Day_015_ParallelTests.OrangeHRMTest
+
